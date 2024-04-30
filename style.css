@@ -1,0 +1,108 @@
+.container{
+    background: #f2f2f2;
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    vertical-align: middle;
+}
+#responsiveImg{
+    position: sticky;
+    top: 15px;
+}
+.logo img {
+   display: inline-block;
+   margin-top: 15px;
+   padding: 4px;
+   position: relative;
+
+
+}
+.logo{
+    position: relative;
+    left: 30%;
+    top: 1%;
+    display: inline-block;
+}
+.no-of-pages,page,a{
+    text-decoration: none;
+    /* display: inline-block; */
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 9px;
+}
+.page{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    
+}
+#logo2{
+    position: relative;
+    top: 15px;
+    left: -549px;
+}
+#cross{
+    position: relative;
+    top: -16px;
+    left: 1216px;
+
+}
+
+#pageno{
+    padding: 8px 20px;
+}
+#bgimg{
+    position: relative;
+    width: 100%;
+    margin-top: 38px;
+}
+
+.steel {
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    width: 300px;
+
+
+}
+.steel,h1,p{
+    color: white;
+
+}
+.steel,h1{
+    margin: 30px 20px;
+    font-size: 5rem;
+}
+.steel,button {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 25px 0;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+
+}
+.description{
+    font-size: medium;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+#para{
+    text-align:left;
+}
+.footer1{
+    height: 200px;
+    background-color: #333333;
+}
+.small text,p{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
