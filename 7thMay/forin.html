@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="cars"> </p>
+    <p id="count"> </p>
+    <script>
+        const Address = {State: "Maharashtra" , District: "Ahmadnagar" , City: "Loni"};
+        let text = "";
+        for(let x in Address){
+            text += Address[x] + " ";
+        }
+        document.getElementById("cars").innerHTML = text;
+    </script>
+
+    <!-- For In Over Array -->
+    <script>
+        const countries = ["India"  ,  "USA" , "Australia" , "China"];
+        let count = " ";
+        for(let x in countries){
+            count += countries[x] + " ";
+        }
+        document.getElementById("count").innerHTML = count;
+    </script>
+</body>
+</html>
