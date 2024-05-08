@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function check(i) {  // function definition ( expression )//
+            if (i == 0) {
+                document.write("the entered number is zero :")
+            }
+            else if (i > 0) {
+                if (i % 2 === 0) {
+                    document.write("the entered number is positive and is even : ")
+                }
+                else {
+                    document.write("the entered number is positive and odd : ")
+                }
+            }
+            else {
+                if (i % 2 === 0) {
+                    document.write("the number is negative and even : ");
+                }
+                else {
+                    document.write("the entered number is negative and odd : ")
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        // function declearation //
+        i = parseInt(prompt("enter the value of i : "))
+        check(i);
+    </script>
+</body>
+
+</html>
