@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button onclick="this.innerHTML= Date()">ClickMe</button>
+        <p id="demo"> </p>
+
+
+    <!-- using function in event -->
+    <script>
+        // display time function using event handling // 
+        function displaydate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+        
+        
+    </script>
+    <p id="demo"> </p>
+    <button onclick=" displaydate()"> Time </button>
+    
+    <!-- display message when click on button -->
+    <p id="msg1"> </p>
+    <button onclick="prntMsg()"> Message is </button>
+    <script>
+
+        let text="hello";
+        function prntMsg(){
+            document.getElementById("msg1").innerHTML = text;
+        }
+    </script>
+    
+    
+</body>
+</html>

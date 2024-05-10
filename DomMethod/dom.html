@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <span id="data">
+        fvdfvdfvvsfdvss
+    </span>
+
+    <script>
+
+        let heading = document.createElement("h1")
+        heading.innerHTML = " this is heading "
+        document.body.appendChild(heading);
+        let button = document.createElement("button")
+        let data = document.getElementById("data")
+        button.innerText = "click me"
+        function abc(){
+            data.innerHTML = " helllo js";
+        }
+        
+        document.body.appendChild(button);
+        button.addEventListener("click", abc)
+    </script>
+</body>
+</html>
