@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Methods in JS</title>
+  </head>
+  <body>
+    <script>
+      const Cars = {
+        Name: "harrier",
+        Company: "tata",
+        Type: "suv",
+        carDetails: function () {
+          console.log(this.Name + " " + this.Company);
+        },
+      };
+
+      Cars.carDetails();
+
+      // using touppercase method in object
+
+      const company = {
+        Brand: "Hundai",
+        Address: "pune",
+        Date: "12 jan 14",
+        cdetails: function () {
+          let x = this.Name + " " + this.Address;
+          console.log(x.toUpperCase());
+        },
+      };
+      company.cdetails();
+
+      const key1 = Object.keys(company); // returns keys inn the object which we created
+      console.log(key1);
+
+      const val = Object.values(company); // return the values in the object which we created
+      console.log(val);
+
+      const ent = Object.entries(company); // returns entire keys and values in the object which we created
+      console.log(ent);
+
+      const ass = Object.assign(Cars, company); // we can create two object and merge them with assign method
+      console.log(ass);
+    </script>
+  </body>
+</html>
