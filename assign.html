@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operator </title>
+</head>
+<body>
+    <p> simple assignment operator </p>
+    <p id="assign"> </p>
+    <p id="assign1"> </p>
+    <p id="oper"> </p>
+    <p id="hello"> </p>
+    <p id="subs"> </p>
+    <p id="mul"> </p>
+    <p id="expo"> </p>
+    <p id="divi"> </p>
+    <p id="rem"> </p>
+    <script> // simple assignment operator assign value to variable //
+        let x = 10;
+        document.getElementById("assign").innerHTML = "value of x is:<br>" + x;
+        let y = 50;
+        let a = 10 + y;
+        document.getElementById("assign1").innerHTML = "the value of a is:<br>" + a;
+
+        // using += assign operator //
+        let c = "10";  // it means c = 10 + 5 = 15
+        c += 5;
+        document.getElementById("oper").innerHTML = "the value of c is:<br>" + c;
+
+        let text = "hello";
+        text += "world !"
+        document.getElementById("hello").innerHTML = "the text is :<br>"  + text;
+
+        // using -= operator in javascript
+        let d = 20;
+        d -= 12;
+        document.getElementById("subs").innerHTML = "the value of d is: <br>" + d;
+
+        // using *= operator
+        let e = 45;
+        e *= 2;
+        document.getElementById("mul").innerHTML = "the value of e is : <br>" + e;
+
+        // using exponential operator i.e **=
+        let f = 20;
+        f **= 5;
+        document.getElementById("expo").innerHTML = "the value of exponential is :<br>" + f;
+
+        // using division assign operator 
+        let g = 20;
+        g /= 2;
+        document.getElementById("divi").innerHTML = "the value of g is :<br>" + g;
+
+        // using remainder assign operator
+        let h = 50;
+        h %= 6;
+        document.getElementById("rem").innerHTML = "the value of remainder is : <br>" + h;
+    </script>
+</body>
+</html>
