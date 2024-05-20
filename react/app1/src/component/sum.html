@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+  // index =  0 1 2 3 4
+let array1 = [1,0,2,3,4];
+
+// index =    0 1 2 3 4 5
+let array2 = [3,5,6,7,8,13];
+
+let output = sum(array1,array2);
+function sum(array1,array2){
+   let result = [];
+   let maxlength = Math.max(array1.length , array2.length);
+   for(i=0; i< maxlength; i++){
+       let sum = (array1[i] || 0) + (array2[i] || 0);
+       result.push(sum);
+   }
+   return result;
+}
+console.log(output);
+
+
+  </script>
+</body>
+</html>  
+  
+  
