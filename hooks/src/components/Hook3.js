@@ -4,7 +4,6 @@ function Hook3(){
     const [message , setMessage] = useState('Hello React !');
 
     useEffect (() => {
-        console.log("useeffect updated");
         const timer = setTimeout(() => {
             setMessage('Hello World !');
         },1000);
