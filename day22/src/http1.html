@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Fetch Data</title>
+</head>
+<body>
+    <h1> Fetch Data From Another File </h1>
+    <button id="fetchbtn"> Fetch Data </button>
+    <p id="content"></p>
+
+    <script>
+        document.getElementById("fetchbtn").addEventListener('click' , function(){
+            const xhttp = new XMLHttpRequest()
+            xhttp.open('GET' ,'new.txt', true );
+            xhttp.onload = function(){
+            document.getElementById("content").innerHTML =  this.responseText
+        };
+        xhttp.send();
+        });
+    </script>
+</body>
+</html>

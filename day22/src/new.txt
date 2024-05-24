@@ -1,0 +1,1 @@
+This Is the example of Ajax fetch data using http request.
