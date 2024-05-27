@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & Continue </title>
+</head>
+
+<body>
+    <!-- BREAK STATEMENT -->
+    <p id="numbers"></p>
+    <script>
+        let num = " ";
+        for (i = 5; i <= 30; i++) {
+            if (i == 10) {
+                break;
+            }
+            num += + i + "<br>";
+        }
+        document.getElementById("numbers").innerHTML = num;
+    </script>
+    <!--  CONTINUE STATEMENT -->
+    <p id="number1"> </p>
+    <script>
+        let num1 = " ";
+        for (i = 4; i <= 20; i++) {
+            if (i == 7) {
+                continue;
+            }
+            num1 +=  + i + "<br>";
+        }
+        document.getElementById("number1").innerHTML = num1;
+    </script>
+</body>
+
+</html>
