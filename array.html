@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods In JS</title>
+  </head>
+  <body>
+    <script>
+      let countries = ["India", "Japan", "England", "USA", "Russia"];
+
+      console.log(countries.length);
+
+      console.log(countries.toString());
+
+      console.log(countries.at(4)); // it finds the element at which position we want
+
+      console.log(countries.join(" . ")); // it joins the array
+
+      countries.push("Dubai"); // it can returns new array index
+      console.log(countries);
+
+      countries.shift(); // removes the first element from array and shift all other element to a lowe index
+      console.log(countries);
+
+      countries.unshift("windies"); // it gives the length of the new array
+      console.log(countries);
+
+      // array concat method //
+      let newarr = ["apple", "ball", "cat", "dog", "cat", "cat"];
+
+      let conc = countries.concat(newarr);
+      console.log(conc);
+
+      let conc1 = newarr.concat("banana"); // mereging array with value
+      console.log(conc1);
+
+      // it copies to index 3 from index 0
+      countries.copyWithin(3, 0);
+      console.log(countries);
+
+      let num = [
+        [1, 4],
+        [3, 2],
+        [6, 5],
+        [8, 7],
+      ];
+      let new1 = num.flat();
+      console.log(new1);
+
+      // search methods in array
+
+      console.log(countries.indexOf("England"));
+      console.log(newarr.lastIndexOf("cat"));
+
+      // array includes
+      console.log(newarr.includes("apple"));
+
+      // array sort() method
+      let numm = ["zebra", "mango", "kiwi", "banana"];
+      let new2 = numm.sort();
+
+      console.log(new2);
+
+      // reversing an array
+      let new3 = numm.reverse();
+      console.log(new3);
+
+      let rev = ["A", "B", "C", "D", "E"];
+      let rev1 = rev.reverse();
+      console.log(rev1);
+
+      
+    </script>
+  </body>
+</html>
