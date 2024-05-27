@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise = new Promise(function(resolve,reject){
+            let developer = false;
+            if(developer){
+                setTimeout(() => {
+                    resolve("you are the developer ")
+                } , 2000)
+            }
+            else{
+                reject("you are not a developer ")
+            }
+        });
+
+        promise.then((res) => {  // whenn our promise is fullfill or response is coming then we use promise.then 
+            console.log(res)
+        }).catch(console.error())  // when there is an error occur or reponse is not coming then we use .catch 
+    </script>
+</body>
+</html>
