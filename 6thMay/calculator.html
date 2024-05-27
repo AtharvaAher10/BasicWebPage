@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="cal"> </p>
+    <script>
+        let number1 = Number(prompt("Enter the value of number1: "));
+        let number2 = Number(prompt("Enter the value of number2: "));
+
+        const operator = prompt("Enter an operator (either +, -, *, or /): ");
+
+        switch (operator) {
+            case "+":
+                result = number1 + number2;
+                document.write(`${number1} + ${number2} = ${result}`);
+                break;
+
+            case "-":
+                result = number1 - number2;
+                document.write(`${number1} - ${number2} = ${result}`);
+                break;
+
+            case "*":
+                result = number1 * number2;
+                document.write(`${number1} * ${number2} = ${result}`);
+                break;
+
+            case "/":
+                result = number1 / number2;
+                document.write(`${number1} / ${number2} = ${result}`);
+                break;
+
+            default:
+                document.write("Invalid operator");
+        }
+
+    </script>
+</body>
+
+</html>
