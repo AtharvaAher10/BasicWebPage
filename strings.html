@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> String Methods In Javascript </title>
+</head>
+<body>
+    <p id="strr"> </p>
+    <p id="qts"> </p>
+    <p id="ele1"> </p>
+    <p id="leng"> </p>
+    <p id="abc"> </p>
+    <p id="toupper"> india </p>
+    <p id="low"> PHENOMENON </p>
+    <p id="conc"> </p>
+    <p id="repl"> This is company </p>
+    <p id="splt"> </p>
+
+    <script> 
+    
+    // simple string code to print the two values of the string 
+        let carname1 = "Altroz";
+        let carname2 = "Harrier";
+        document.getElementById("strr").innerHTML = carname1 + " " + carname2;
+
+
+        // we can use quotes inside the quotes in string method in js 
+
+        let val1 = "this is company";
+        let val2 = "of 'software'";
+        let val3 = 'in pune "city"';
+
+        document.getElementById("qts").innerHTML = val1 + "<br>" + val2 +"<br>" + val3;
+
+
+        // templates in strings // they are string enclosed in backticks 
+
+        let ele = `this is the template "string" in js `;
+        document.getElementById("ele1").innerHTML = ele;
+
+
+        // string length mathod 
+
+        let txt = "Indian Cricket TeaM";
+        document.getElementById("leng").innerHTML = "the length of the given entered string is : &nbsp " + txt.length;
+
+
+        // string escaped characters 
+
+        let txtx = " this  <b>\'method\'</b> for getting single quotes</ul> <br>"
+        let txtx1 = " this <b>\"method\"</b> for getting double quotes <br>"
+        let txtx2 = " this <b>\\method\\</b> for getting backslash <br>"
+        document.write(txtx);
+        document.write(txtx1);
+        document.write(txtx2);
+
+
+
+        // string slice method in js 
+
+        let txxt = "india, austrelia,englan";
+        let resullt = txxt.slice(-12,-6);
+        document.getElementById("abc").innerHTML = resullt;
+
+
+        // to uppercase and tolowercase method in string 
+
+        function myFunction1(){
+        let upper = document.getElementById("toupper").innerHTML;
+        document.getElementById("toupper").innerHTML = "the uppercase string is <br> " + upper.toUpperCase();
+
+}
+        myFunction1();
+
+
+        // using toLoweCase method in js 
+        
+        function lowe(){
+            let low = document.getElementById("low").innerHTML;
+            document.getElementById("low").innerHTML = "the lowercase string is : <br> " + low.toLowerCase();
+        }
+
+        lowe();
+
+
+        // string concat method 
+
+        let Text1 = "India Is";
+        let Text2 = "My Country"
+        let Text3 = Text1.concat(" " , Text2);
+        document.getElementById("conc").innerHTML = "solution of string concat is : <br>" +Text3;
+
+
+        // using string replace method 
+
+        function repLace(){
+            let newtxt = "please visit india and Australia"
+            console.log(newtxt.replace("Australia","England"));
+        }
+
+        repLace();
+
+
+        // using string replace all method 
+
+        function repLaceAll(){
+            let newtxt = " india is my country my country is india";
+            console.log(newtxt.replaceAll("india","England"));
+        }
+
+        repLaceAll();
+
+        // using a split string method 
+        
+        let text = "atharvaaaa";
+        let myArray = text.split("a");
+        document.getElementById("splt").innerHTML = "remaining element after splitting is : <br>" + myArray[2];
+    
+    </script>
+</body>
+</html>

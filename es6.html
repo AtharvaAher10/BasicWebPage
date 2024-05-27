@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es6 In Js </title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <p id="rese"> </p>
+    <p id="cars"> </p>
+    <p id="for"> </p>
+    <p id="map"> </p>
+    <p id="filter"> </p>
+    <p id="red1"> </p>
+    <p id="frut"> </p>
+    <p id="frut1"> </p>
+    <script>
+        let str = "Atharva";
+        let str1 = "Classroom";
+        document.getElementById("demo1").innerHTML = str.charAt(2); // to find word at which number it present in string // 
+
+
+        document.getElementById("demo").innerHTML = str[3]; // we can also find word at 3rd position using str[3] method //
+
+
+        document.getElementById("demo2").innerHTML = "Hello \
+        World !"; // allows string literals over multiple lines if escaped with a backslash //
+
+
+        // allows reserved words as property name //
+        let obj = {one: "atharva", two: "aher"}
+        document.getElementById("rese").innerHTML = obj.one;
+
+
+
+        // Array.isArray() method to display the object is in array or not //
+        function myCars(){
+            let cars = ["bugati", "bmw", "mahindra"];
+            let x = document.getElementById("cars");
+            x.innerHTML = Array.isArray(cars);  // it checks cars if it is in array return boolean values //
+
+        }
+        myCars();
+
+
+
+
+        // using array forEacn method // 
+        let txt = " ";
+        let numbers = [1,45,67,10,32,54]; // numbers is an array 
+        numbers.forEach(myFunction); // calls function once in each array element 
+        document.getElementById("for").innerHTML = txt;
+
+        function myFunction(value){  // function with parameter value which can access elememnts from function myfunction // 
+            txt = txt + value + "<br>";
+        }
+
+
+
+        // using array map function 
+
+        let number1 = [12,23,11,15,45];
+        let number2 = number1.map(mapFunction); // here map called number 1 and creates new array of number 2 by applying a function mapFunction in it // 
+        document.getElementById("map").innerHTML = number2;
+
+        function mapFunction(value ,index ,array){
+        return value * 2; 
+    }
+
+
+
+    // using array filter method //
+    let filter1 = [13,56,43,76,12,11,23];
+    let new1 = filter1.filter(myFunction); 
+    document.getElementById("filter").innerHTML = "the numbers greater than 50 is :  <br> " + new1;
+
+    function myFunction(value , index, array){
+        return value > 50;
+    }
+
+
+
+    //  using reduce function 
+
+
+    let red = [10,76,21];
+    let num = red.reduce(myFunc);
+    document.getElementById("red1").innerHTML = "the total of the numbers in array is : <br> " +num;
+
+    function myFunc(total, value, index,array){
+        return total + value;   // here total is variable which initial value is zero and value is the value of first element in array i.e total + value = total(0)+ value(10)=10 //
+    }
+
+
+
+    // using indexOf method in array  
+
+    let fruits = ["apple", "kiwi", "mango" , "banana"];
+    let position = fruits.indexOf("banana");  // indexOf gives the position of the element at which it present      in array //
+    document.getElementById("frut").innerHTML = " fruit found in position <br> " + position;
+
+
+
+    let fruits1 = ["apple", "kiwi", "mango" , "banana", "apple","orange", "banana","apple"];
+    let position1 = fruits1.lastIndexOf("banana");  // indexOf gives the position of the element at which it present      in array //
+    document.getElementById("frut1").innerHTML = " fruit found in position <br> " +position1;
+
+
+
+    </script>
+</body>
+</html>
