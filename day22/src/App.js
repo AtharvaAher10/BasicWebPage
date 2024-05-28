@@ -1,5 +1,9 @@
 import './App.css';
 import Fetch  from './component/Fetch.js';
+import Error1 from './component/Error1.jsx';
+import Error2 from './component/Error2.jsx';
+import Reqresponse from './component/Reqresponse.jsx';
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +21,10 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Fetch/>
+      {/* <Fetch/> */}
+      {/* <Error1/> */}
+      {/* <Error2/> */}
+      <Reqresponse/>
     </div>
 
   );
