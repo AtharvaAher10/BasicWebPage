@@ -3,6 +3,9 @@ import Fetch  from './component/Fetch.js';
 import Error1 from './component/Error1.jsx';
 import Error2 from './component/Error2.jsx';
 import Reqresponse from './component/Reqresponse.jsx';
+import Event from './component/Event.jsx';
+import Form1 from './component/Form1.jsx';
+import Binding from './component/Binding.jsx';
 
 function App() {
   return (
@@ -24,10 +27,18 @@ function App() {
       {/* <Fetch/> */}
       {/* <Error1/> */}
       {/* <Error2/> */}
-      <Reqresponse/>
+      {/* <Reqresponse/> */}
+      {/* <Event/> */}
+      {/* <Form1/> */}
+      <Binding/>
     </div>
 
   );
 }
 
 export default App;
+
+
+
+
+
