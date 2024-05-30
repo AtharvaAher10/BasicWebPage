@@ -1,8 +1,8 @@
-import './App.css';
-import Fetch  from './component/Fetch.js';
-import Error1 from './component/Error1.jsx';
-import Error2 from './component/Error2.jsx';
-import Reqresponse from './component/Reqresponse.jsx';
+import "./App.css";
+import Home from "./component/Home.js";
+import About from "./component/About.jsx";
+import Contact from "./component/Contact.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -21,12 +21,12 @@ function App() {
           Learn React
         </a>
       </header> */}
-      {/* <Fetch/> */}
-      {/* <Error1/> */}
-      {/* <Error2/> */}
-      <Reqresponse/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
     </div>
-
   );
 }
 
