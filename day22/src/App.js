@@ -1,8 +1,10 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Fetch  from './component/Fetch.js';
-import Error1 from './component/Error1.jsx';
-import Error2 from './component/Error2.jsx';
-import Reqresponse from './component/Reqresponse.jsx';
+import Home from './component/Home.jsx';
+import Userprofile from './component/Userprofile.jsx';
+import { Link } from 'react-router-dom';
+
+
 
 function App() {
   return (
@@ -24,7 +26,26 @@ function App() {
       {/* <Fetch/> */}
       {/* <Error1/> */}
       {/* <Error2/> */}
-      <Reqresponse/>
+      {/* <Reqresponse/> */}
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/user/1">User 1</Link>
+          </li>
+          <li>
+            <Link to="/user/2">User 2</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/user/:id" element={<Userprofile />} />
+        
+      </Routes>
     </div>
 
   );
